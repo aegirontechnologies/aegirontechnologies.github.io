@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIREON by Aegiron Technologies</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #e0f0ff; /* Columbia blue */
-      margin: 0;
-      padding: 0;
-      color: #222;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Aegiron Technologies</h1>
-    <p>Home of the VIREON Platform — Open. Ethical. Upgradeable.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aegiron Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-6 shadow">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Aegiron Technologies</h1>
+        <nav class="space-x-6">
+          <a href="#products" class="hover:underline">Products</a>
+          <a href="#platform" class="hover:underline">Platform</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <section>
-    <h2>What is VIREON?</h2>
-    <p>VIREON is an open modular CPU platform, featuring socketed ARMv9 and RISC-V processors designed for scalable, secure, and ethical computing across consumer, enterprise, and defense sectors.</p>
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-500 text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-extrabold mb-4">Open Compute for Everyone</h2>
+        <p class="text-xl mb-6">From gamers to defense operators — ethical, modular, and upgradeable computing starts here.</p>
+        <a href="#products" class="bg-white text-blue-800 px-6 py-3 rounded shadow font-semibold">Explore VIREON Platform</a>
+      </div>
+    </section>
 
-    <h2>Introducing Emotion²</h2>
-    <p>Inspired by the PS3's Cell processor, Emotion² is a modern RISC-V architecture combining a scalar control core with modular AI/vector tiles. Ideal for AI, simulation, gaming, and secure edge compute.</p>
+    <!-- Products -->
+    <section id="products" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Core Technologies</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="text-xl font-semibold mb-2">VIREON CPUs</h4>
+            <p>Socketed ARMv9 and RISC-V CPUs, scalable from 4 to 196 cores, built for upgradeability and performance.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="text-xl font-semibold mb-2">Emotion²</h4>
+            <p>A RISC-V architecture reimagining the Cell processor — for real-time AI, vector compute, and simulation.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="text-xl font-semibold mb-2">LGA-Z1 Socket</h4>
+            <p>Open, upgradable CPU socket supporting both ARM and RISC-V platforms with 1056 pins.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="text-xl font-semibold mb-2">BIEM Module</h4>
+            <p>Behavioral Integrity Enhancement Module (BIEM) — a PCIe safeguard enforcing AI and logic compliance.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="text-xl font-semibold mb-2">Nova TPU</h4>
+            <p>Scalable AI accelerator for INT8 and FP16 inference — optimized for edge and data center deployment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h2>Socket Standard: LGA-Z1</h2>
-    <p>The LGA-Z1 socket supports up to 1056 pins and enables upgradable CPU modules from 4 to 32 cores (consumer) and up to 196 cores (server). It empowers motherboard manufacturers and developers to build custom open hardware platforms.</p>
+    <!-- Call to Action -->
+    <section id="platform" class="py-16 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-4">Build With Us</h3>
+        <p class="mb-6 max-w-xl mx-auto">Collaborate with Aegiron through open hardware standards, FPGA prototyping, or academic partnerships.</p>
+        <a href="#contact" class="bg-blue-800 text-white px-6 py-3 rounded font-semibold">Contact Us</a>
+      </div>
+    </section>
 
-    <h2>Behavioral Integrity: BIEM</h2>
-    <p>BIEM (Behavioral Integrity Enhancement Module) is a dedicated PCIe module designed to enforce ethical and logical safeguards at the hardware level. It ensures AI systems and critical infrastructure operate within defined behavioral boundaries—supporting defense, industrial, and community deployments.</p>
+    <!-- Contact -->
+    <section id="contact" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-4 text-center">
+        <h4 class="text-2xl font-semibold mb-2">Get in Touch</h4>
+        <p>Email us at <a href="mailto:info@aegirontechnologies.com" class="text-blue-700 underline">info@aegirontechnologies.com</a></p>
+      </div>
+    </section>
 
-    <h2>AI Acceleration: VIREON Nova TPU</h2>
-    <p>The VIREON Nova TPU is a scalable AI accelerator designed to enhance FP16/INT8 inference workloads. Available in modular form factors, it supports AI processing at the edge and in data centers, complementing Emotion² compute nodes and BIEM governance layers.</p>
-
-    <h2>Get Involved</h2>
-    <p>We welcome collaboration with developers, researchers, and engineers. Join us on GitHub, partner on FPGA prototyping, or explore capstone projects with your institution.</p>
-
-    <p><strong>Contact:</strong> info@aegirontechnologies.com</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Aegiron Technologies. All rights reserved.
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+      &copy; 2025 Aegiron Technologies. All rights reserved.
+    </footer>
+  </body>
 </html>
